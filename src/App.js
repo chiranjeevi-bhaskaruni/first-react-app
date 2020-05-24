@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { MemberList } from './components/member-list/member-list.component';
 
 // function component
 /* function App() {
@@ -22,7 +23,8 @@ class App extends Component {
         "Gopichand Kumar",
         "Swapna Rama",
         "Chiranjeevi"
-      ]
+      ],
+      users: []
     }
   }
 
@@ -30,14 +32,20 @@ class App extends Component {
     this.setState({name: 'CSK'});
   } */
 
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(users => this.setState({users: users}))
+  }
+
   render() {
     return (
       <div className="App">
         <p>Hello, {this.state.name}!!!</p>
         <button onClick={() => this.changeName()}>Change Name</button>
-        {
-          this.state.members.map((member, index) => <h1 key={index}>{member}</h1>)
-        }
+        <MemberList members={this.state.members}>
+          <p>I'm child - <i>{this.state.family_name}</i></p>
+        </MemberList>
       </div>
     )
   }
