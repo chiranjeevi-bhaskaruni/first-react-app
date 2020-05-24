@@ -21,12 +21,12 @@ class App extends Component {
       searchValue: ''
     }
 
-    this.handleChange = this.handleChange.bind(this);
   }
-  
-  handleChange(e) {
+
+  handleChange = e => {
     this.setState({searchValue: e.target.value})
   }
+  
   
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -47,7 +47,12 @@ class App extends Component {
   }
   
   export default App;
-
+  
+  /* 
+    this.handleChange = this.handleChange.bind(this);
+    handleChange(e) {
+    this.setState({searchValue: e.target.value})
+  } */
 
   /* changeName() {
     this.setState({name: 'CSK'});
