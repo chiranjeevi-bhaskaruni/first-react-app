@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { CardList } from './components/card-list/card-list.component';
 import Container from 'react-bootstrap/Container';
-import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
-
+import { SearchBox } from './components/search-box/search-box.component';
 
 class App extends Component {
   constructor() {
@@ -22,12 +20,13 @@ class App extends Component {
       users: [],
       searchValue: ''
     }
+
   }
   
   /* changeName() {
     this.setState({name: 'CSK'});
   } */
-  
+
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => response.json())
@@ -39,17 +38,7 @@ class App extends Component {
     const filteredUsers = users.filter(user => user.name.toLowerCase().includes(searchValue.toLowerCase()))
     return (
       <Container fluid className="p-3">
-        <InputGroup className="mb-3">
-          <FormControl
-            placeholder="Search Users"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-            onChange={e => {
-              this.setState({searchValue: e.target.value})
-            }
-          }
-          />
-        </InputGroup>
+        <SearchBox handleChange={e => this.setState({searchValue: e.target.value})}/>
         <CardList users={filteredUsers} />
       </Container>
       )
