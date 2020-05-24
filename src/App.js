@@ -15,19 +15,29 @@ class App extends Component {
     super();
 
     this.state = {
-      name: "Chiru"
+      family_name: "Bhaskaruni",
+      members: [
+        "Lakshmi Narayana",
+        "Sheshamba Devi",
+        "Gopichand Kumar",
+        "Swapna Rama",
+        "Chiranjeevi"
+      ]
     }
   }
 
-  changeName() {
+  /* changeName() {
     this.setState({name: 'CSK'});
-  }
+  } */
 
   render() {
     return (
       <div className="App">
         <p>Hello, {this.state.name}!!!</p>
         <button onClick={() => this.changeName()}>Change Name</button>
+        {
+          this.state.members.map((member, index) => <h1 key={index}>{member}</h1>)
+        }
       </div>
     )
   }
