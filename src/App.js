@@ -21,12 +21,13 @@ class App extends Component {
       searchValue: ''
     }
 
+    this.handleChange = this.handleChange.bind(this);
   }
   
-  /* changeName() {
-    this.setState({name: 'CSK'});
-  } */
-
+  handleChange(e) {
+    this.setState({searchValue: e.target.value})
+  }
+  
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => response.json())
@@ -38,14 +39,20 @@ class App extends Component {
     const filteredUsers = users.filter(user => user.name.toLowerCase().includes(searchValue.toLowerCase()))
     return (
       <Container fluid className="p-3">
-        <SearchBox handleChange={e => this.setState({searchValue: e.target.value})}/>
-        <CardList users={filteredUsers} />
+      <SearchBox handleChange={this.handleChange}/>
+      <CardList users={filteredUsers} />
       </Container>
       )
     }
   }
   
   export default App;
+
+
+  /* changeName() {
+    this.setState({name: 'CSK'});
+  } */
+
   // function component
   /* function App() {
     return (
