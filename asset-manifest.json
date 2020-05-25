@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/chiranjeevi-bhaskaruni/first-react-app/static/css/main.14252c81.chunk.css",
-    "main.js": "/chiranjeevi-bhaskaruni/first-react-app/static/js/main.dbdd3243.chunk.js",
-    "main.js.map": "/chiranjeevi-bhaskaruni/first-react-app/static/js/main.dbdd3243.chunk.js.map",
-    "runtime-main.js": "/chiranjeevi-bhaskaruni/first-react-app/static/js/runtime-main.58044cb4.js",
-    "runtime-main.js.map": "/chiranjeevi-bhaskaruni/first-react-app/static/js/runtime-main.58044cb4.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/chiranjeevi-bhaskaruni/first-react-app/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.878b5121.chunk.js": "/chiranjeevi-bhaskaruni/first-react-app/static/js/2.878b5121.chunk.js",
-    "static/js/2.878b5121.chunk.js.map": "/chiranjeevi-bhaskaruni/first-react-app/static/js/2.878b5121.chunk.js.map",
-    "index.html": "/chiranjeevi-bhaskaruni/first-react-app/index.html",
-    "precache-manifest.3bb353453a6e72f2412c4feff1e60317.js": "/chiranjeevi-bhaskaruni/first-react-app/precache-manifest.3bb353453a6e72f2412c4feff1e60317.js",
-    "service-worker.js": "/chiranjeevi-bhaskaruni/first-react-app/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/chiranjeevi-bhaskaruni/first-react-app/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.14252c81.chunk.css.map": "/chiranjeevi-bhaskaruni/first-react-app/static/css/main.14252c81.chunk.css.map",
-    "static/js/2.878b5121.chunk.js.LICENSE.txt": "/chiranjeevi-bhaskaruni/first-react-app/static/js/2.878b5121.chunk.js.LICENSE.txt"
+    "main.css": "/first-react-app/static/css/main.14252c81.chunk.css",
+    "main.js": "/first-react-app/static/js/main.6d6d2bad.chunk.js",
+    "main.js.map": "/first-react-app/static/js/main.6d6d2bad.chunk.js.map",
+    "runtime-main.js": "/first-react-app/static/js/runtime-main.d82f5a8b.js",
+    "runtime-main.js.map": "/first-react-app/static/js/runtime-main.d82f5a8b.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/first-react-app/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.878b5121.chunk.js": "/first-react-app/static/js/2.878b5121.chunk.js",
+    "static/js/2.878b5121.chunk.js.map": "/first-react-app/static/js/2.878b5121.chunk.js.map",
+    "index.html": "/first-react-app/index.html",
+    "precache-manifest.9916c7d01ec6e6c84b6c3181f0e432fc.js": "/first-react-app/precache-manifest.9916c7d01ec6e6c84b6c3181f0e432fc.js",
+    "service-worker.js": "/first-react-app/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/first-react-app/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.14252c81.chunk.css.map": "/first-react-app/static/css/main.14252c81.chunk.css.map",
+    "static/js/2.878b5121.chunk.js.LICENSE.txt": "/first-react-app/static/js/2.878b5121.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.58044cb4.js",
+    "static/js/runtime-main.d82f5a8b.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.878b5121.chunk.js",
     "static/css/main.14252c81.chunk.css",
-    "static/js/main.dbdd3243.chunk.js"
+    "static/js/main.6d6d2bad.chunk.js"
   ]
 }
