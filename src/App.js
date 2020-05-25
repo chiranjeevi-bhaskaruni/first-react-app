@@ -39,7 +39,8 @@ class App extends Component {
     const filteredUsers = users.filter(user => user.name.toLowerCase().includes(searchValue.toLowerCase()))
     return (
       <Container fluid className="p-3">
-      <SearchBox handleChange={this.handleChange}/>
+      <h1 className="d-flex justify-content-center">Kitty Search Engine</h1>
+      <SearchBox placeholder="Kitties Search" handleChange={this.handleChange}/>
       <CardList users={filteredUsers} />
       </Container>
       )
